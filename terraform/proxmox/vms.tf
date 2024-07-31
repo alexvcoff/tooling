@@ -3,7 +3,7 @@ resource "proxmox_vm_qemu" "k8s-master" {
   target_node = "proxmox"
   vmid        = 101
   clone       = "template-ubuntu-24-04"
-  on_boot     = true
+  onboot      = true
   os_type     = "cloud-init"
 #   cpu         = "kvm64"
   cores       = 2
